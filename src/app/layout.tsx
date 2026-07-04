@@ -13,8 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// TODO: replace with your real deployed domain once you have one
-const siteUrl = "https://your-portfolio.vercel.app";
+const siteUrl = "https://jeybrieltownsend.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

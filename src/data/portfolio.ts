@@ -39,6 +39,7 @@ export const projects: Project[] = [
     description:
       "A local pipeline that parses a resume into a structured profile, searches multiple job-board APIs, dedupes and scores postings in SQLite, and prints a human-review queue — nothing is ever auto-submitted. Runs isolated tracks per role type so matching stays relevant to each.",
     stack: ["Python", "SQLite", "Claude API", "Adzuna API", "USAJobs API"],
+    image: "/images/projects/jobhunter.jpg",
     featured: true,
   },
   {
@@ -47,6 +48,7 @@ export const projects: Project[] = [
     description:
       "Pulls closed trades from the OANDA API and writes them directly into an Excel trading journal — prices, lot sizes, direction, and P&L — with automatic trading-session, style, and exit-reason detection.",
     stack: ["Python", "OANDA API", "openpyxl"],
+    image: "/images/projects/oanda-journal.jpg",
     repoUrl: "https://github.com/townsendjt19/oanda_journal",
     featured: true,
   },
@@ -56,6 +58,7 @@ export const projects: Project[] = [
     description:
       "A quantitative forex research system with a pluggable strategy architecture (AVWAP fade, Donchian channel, Fibonacci retracement, COT positioning), a historical backtester, and always-on paper-trading bots running live against a broker API with governance and audit logging.",
     stack: ["Python", "Pandas", "OANDA API", "SQLite"],
+    image: "/images/projects/fx-strategy-engine.jpg",
     featured: true,
   },
   {
@@ -64,6 +67,7 @@ export const projects: Project[] = [
     description:
       "A ChatGPT-style chat client built with React and Tailwind CSS, backed by a serverless API wrapping a hosted LLM completion endpoint, deployed on Vercel.",
     stack: ["React", "Tailwind CSS", "Node.js", "Vercel"],
+    image: "/images/projects/jeygpt.jpg",
     repoUrl: "https://github.com/townsendjt19/JeyGPT",
   },
 ];

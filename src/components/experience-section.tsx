@@ -1,11 +1,12 @@
 import { experience } from "@/data/portfolio";
 import { SectionHeading } from "@/components/section-heading";
+import { Reveal } from "@/components/motion/reveal";
 
 export function ExperienceSection() {
   return (
     <section id="experience" className="mx-auto max-w-5xl px-6 py-20">
       <SectionHeading eyebrow="Experience" title="Where I've worked" />
-      <div className="flex flex-col gap-10">
+      <Reveal className="flex flex-col gap-10">
         {experience.map((item) => (
           <div
             key={`${item.company}-${item.period}`}
@@ -25,7 +26,7 @@ export function ExperienceSection() {
             </ul>
           </div>
         ))}
-      </div>
+      </Reveal>
     </section>
   );
 }

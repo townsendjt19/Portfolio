@@ -1,12 +1,29 @@
+import Image from "next/image";
 import type { Project } from "@/data/portfolio";
+import { getProjectGradient } from "@/lib/gradient";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-2xl border border-foreground/10">
-      <div className="flex h-36 items-center justify-center bg-foreground/5">
-        <span className="text-sm font-medium text-foreground/40">
-          {project.title}
-        </span>
+    <article className="flex flex-col overflow-hidden rounded-2xl border border-foreground/10 transition hover:-translate-y-1 hover:shadow-lg">
+      <div className="relative h-36 overflow-hidden">
+        {project.image ? (
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover"
+          />
+        ) : (
+          <div
+            className={`flex h-full items-center justify-center bg-gradient-to-br ${getProjectGradient(
+              project.slug
+            )}`}
+          >
+            <span className="text-5xl font-semibold text-foreground/20">
+              {project.title.charAt(0)}
+            </span>
+          </div>
+        )}
       </div>
       <div className="flex flex-1 flex-col gap-3 p-6">
         <h3 className="font-semibold">{project.title}</h3>

@@ -18,8 +18,7 @@ export const about = {
     "I'm a software engineer at the University of Dayton Research Institute, where I build enterprise software for data migrations, cybersecurity, and cloud-based storage pipelines using Java, Python, and MongoDB. Before that, I worked as an EHR developer, hardening a healthcare records system and supporting the clinical staff who relied on it every day.",
     "I have a B.S. in Computer Science from Virginia Military Institute and a full-stack web development certificate from Talent Tech South. Outside of work I build things I'm curious about — from a quantitative forex research system with a pluggable strategy engine and live paper-trading bots, to a machine learning model that tries to detect deception from EEG brain waves instead of a heart rate.",
   ],
-  // TODO: replace with a real photo in public/images/
-  photo: "/images/profile-placeholder.svg",
+  photo: "/images/profile.jpg",
 };
 
 export type Project = {
